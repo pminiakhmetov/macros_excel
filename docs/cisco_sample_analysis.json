@@ -1,0 +1,1362 @@
+{
+  "cip": {
+    "sheets": [
+      "Cisco"
+    ],
+    "sheet_details": {
+      "Cisco": {
+        "max_row": 22,
+        "max_col": 41,
+        "non_empty_rows_sample": [
+          {
+            "row": 2,
+            "values": [
+              {
+                "col": 12,
+                "value": "CBN/REG:"
+              },
+              {
+                "col": 13,
+                "value": "=IF((Q18-M8)<50000,\"REG\",\"CBN\")"
+              }
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              {
+                "col": 12,
+                "value": "Total Services WPL"
+              },
+              {
+                "col": 13,
+                "value": "=N21"
+              }
+            ]
+          },
+          {
+            "row": 5,
+            "values": [
+              {
+                "col": 12,
+                "value": "Total E-DeliveryL WPL"
+              },
+              {
+                "col": 13,
+                "value": "=SUMIF(C20:C22,\"E\",N20:N22)"
+              },
+              {
+                "col": 16,
+                "value": "Delivery to Dubai:"
+              },
+              {
+                "col": 17,
+                "value": "=M10*2.76%"
+              }
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              {
+                "col": 12,
+                "value": "Total Harware WPL"
+              },
+              {
+                "col": 13,
+                "value": "=N18-M5-M4"
+              },
+              {
+                "col": 16,
+                "value": "Delivery to CIP Tashkent:"
+              }
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              {
+                "col": 16,
+                "value": "Insurance:"
+              },
+              {
+                "col": 17,
+                "value": "=IF(M2=\"REG\",M6*0.15%*110%,M10*0.15%*110%)"
+              }
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              {
+                "col": 4,
+                "value": "Note ! The activation of services should be done not later than 90 days after shipment"
+              },
+              {
+                "col": 12,
+                "value": "Total Services Disti wDisc"
+              },
+              {
+                "col": 13,
+                "value": "=Q21"
+              },
+              {
+                "col": 16,
+                "value": "Grand Total:"
+              },
+              {
+                "col": 17,
+                "value": "=SUM(Q5:Q7)+Q18"
+              }
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              {
+                "col": 4,
+                "value": "Please note that this price quotation considered on the assumption of one shipment"
+              },
+              {
+                "col": 12,
+                "value": "Total E-Delivery Disti wDisc"
+              },
+              {
+                "col": 13,
+                "value": "=SUMIF(C20:C22,\"E\",Q20:Q22)"
+              }
+            ]
+          },
+          {
+            "row": 10,
+            "values": [
+              {
+                "col": 12,
+                "value": "Total Harware Disti wDisc"
+              },
+              {
+                "col": 13,
+                "value": "=Q18-M9-M8"
+              },
+              {
+                "col": 16,
+                "value": "in:"
+              },
+              {
+                "col": 17,
+                "value": "=Q8"
+              }
+            ]
+          },
+          {
+            "row": 11,
+            "values": [
+              {
+                "col": 16,
+                "value": "out:"
+              },
+              {
+                "col": 17,
+                "value": "=AG18"
+              }
+            ]
+          },
+          {
+            "row": 12,
+            "values": [
+              {
+                "col": 12,
+                "value": "Project ID:"
+              },
+              {
+                "col": 13,
+                "value": "AQ165712316LV"
+              },
+              {
+                "col": 16,
+                "value": "Profit $:"
+              },
+              {
+                "col": 17,
+                "value": "=AG18-Q8"
+              }
+            ]
+          },
+          {
+            "row": 13,
+            "values": [
+              {
+                "col": 12,
+                "value": "PM"
+              },
+              {
+                "col": 16,
+                "value": "Profit %:"
+              },
+              {
+                "col": 17,
+                "value": "=Q12/Q8"
+              }
+            ]
+          },
+          {
+            "row": 18,
+            "values": [
+              {
+                "col": 10,
+                "value": "Total GPL:"
+              },
+              {
+                "col": 11,
+                "value": "=SUM(K20:K22)"
+              },
+              {
+                "col": 13,
+                "value": "Total:"
+              },
+              {
+                "col": 14,
+                "value": "=SUM(N20:N22)"
+              },
+              {
+                "col": 16,
+                "value": "Total:"
+              },
+              {
+                "col": 17,
+                "value": "=SUM(Q20:Q22)"
+              }
+            ]
+          },
+          {
+            "row": 19,
+            "values": [
+              {
+                "col": 1,
+                "value": "Equipment"
+              },
+              {
+                "col": 2,
+                "value": "Line"
+              },
+              {
+                "col": 3,
+                "value": "License"
+              },
+              {
+                "col": 4,
+                "value": "P/N"
+              },
+              {
+                "col": 5,
+                "value": "Description"
+              },
+              {
+                "col": 9,
+                "value": "Q-ty"
+              },
+              {
+                "col": 10,
+                "value": "GPL"
+              },
+              {
+                "col": 11,
+                "value": "Total GPL"
+              },
+              {
+                "col": 12,
+                "value": "WPL Discount"
+              },
+              {
+                "col": 13,
+                "value": "WPL"
+              },
+              {
+                "col": 14,
+                "value": "Total WPL"
+              },
+              {
+                "col": 15,
+                "value": "Discount, %"
+              },
+              {
+                "col": 16,
+                "value": "Dist.Price w.Disc"
+              },
+              {
+                "col": 17,
+                "value": "Total Dist Price w.Disc"
+              },
+              {
+                "col": 18,
+                "value": "Delivery per unit"
+              }
+            ]
+          },
+          {
+            "row": 20,
+            "values": [
+              {
+                "col": 1,
+                "value": "1.0"
+              },
+              {
+                "col": 2,
+                "value": "1.0"
+              },
+              {
+                "col": 3,
+                "value": "P"
+              },
+              {
+                "col": 4,
+                "value": "C1300-24P-4G"
+              },
+              {
+                "col": 5,
+                "value": "Catalyst 1300 24-port GE, PoE, 4x1G SFP"
+              },
+              {
+                "col": 9,
+                "value": "1"
+              },
+              {
+                "col": 10,
+                "value": "831.37"
+              },
+              {
+                "col": 11,
+                "value": "=J20*I20"
+              },
+              {
+                "col": 12,
+                "value": "42"
+              },
+              {
+                "col": 13,
+                "value": "=ROUND(J20*(100-L20)%,2)"
+              },
+              {
+                "col": 14,
+                "value": "=M20*I20"
+              },
+              {
+                "col": 16,
+                "value": "=ROUND((J20*(1-O20%)),2)"
+              },
+              {
+                "col": 17,
+                "value": "=P20*I20"
+              },
+              {
+                "col": 18,
+                "value": "=($Q$7+$Q$6+$Q$5)/$Q$18*P20"
+              }
+            ]
+          },
+          {
+            "row": 21,
+            "values": [
+              {
+                "col": 1,
+                "value": "1.1"
+              },
+              {
+                "col": 2,
+                "value": "1.0.1"
+              },
+              {
+                "col": 3,
+                "value": "S"
+              },
+              {
+                "col": 4,
+                "value": "CON-SNT-C13002PG"
+              },
+              {
+                "col": 5,
+                "value": "SNTC-8X5XNBD Catalyst 1300 24-port GE, PoE, 4x1G SFP"
+              },
+              {
+                "col": 9,
+                "value": "1"
+              },
+              {
+                "col": 10,
+                "value": "119.6"
+              },
+              {
+                "col": 11,
+                "value": "=J21*I21"
+              },
+              {
+                "col": 12,
+                "value": "35"
+              },
+              {
+                "col": 13,
+                "value": "=ROUND(J21*(100-L21)%,2)"
+              },
+              {
+                "col": 14,
+                "value": "=M21*I21"
+              },
+              {
+                "col": 15,
+                "value": "35"
+              },
+              {
+                "col": 16,
+                "value": "=ROUND((J21*(1-O21%)),2)"
+              },
+              {
+                "col": 17,
+                "value": "=P21*I21"
+              },
+              {
+                "col": 18,
+                "value": "=($Q$7+$Q$6+$Q$5)/$Q$18*P21"
+              }
+            ]
+          },
+          {
+            "row": 22,
+            "values": [
+              {
+                "col": 1,
+                "value": "1.2"
+              },
+              {
+                "col": 2,
+                "value": "1.1"
+              },
+              {
+                "col": 4,
+                "value": "CAB-ACE"
+              },
+              {
+                "col": 5,
+                "value": "AC Power Cord (Europe), C13, CEE 7, 1.5M"
+              },
+              {
+                "col": 9,
+                "value": "1"
+              },
+              {
+                "col": 10,
+                "value": "0"
+              },
+              {
+                "col": 11,
+                "value": "=J22*I22"
+              },
+              {
+                "col": 12,
+                "value": "42"
+              },
+              {
+                "col": 13,
+                "value": "=ROUND(J22*(100-L22)%,2)"
+              },
+              {
+                "col": 14,
+                "value": "=M22*I22"
+              },
+              {
+                "col": 16,
+                "value": "=ROUND((J22*(1-O22%)),2)"
+              },
+              {
+                "col": 17,
+                "value": "=P22*I22"
+              },
+              {
+                "col": 18,
+                "value": "=($Q$7+$Q$6+$Q$5)/$Q$18*P22"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "ddp": {
+    "sheets": [
+      "Specification"
+    ],
+    "sheet_details": {
+      "Specification": {
+        "max_row": 52,
+        "max_col": 55,
+        "non_empty_rows_sample": [
+          {
+            "row": 2,
+            "values": [
+              {
+                "col": 12,
+                "value": "CBN/REG:"
+              },
+              {
+                "col": 13,
+                "value": "CBN"
+              },
+              {
+                "col": 16,
+                "value": "Delivery to Dubai:"
+              },
+              {
+                "col": 17,
+                "value": "=M10*0.0276"
+              }
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              {
+                "col": 16,
+                "value": "Delivery to CIP Tashkent:"
+              },
+              {
+                "col": 22,
+                "value": "Таможенный сбор"
+              },
+              {
+                "col": 23,
+                "value": "<openpyxl.worksheet.formula.ArrayFormula object at 0x7f4ed9503fb0>"
+              }
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              {
+                "col": 11,
+                "value": "Total Services WPL"
+              },
+              {
+                "col": 13,
+                "value": "=N21"
+              },
+              {
+                "col": 22,
+                "value": "Аэропорт СВХ+Погрузка"
+              },
+              {
+                "col": 23,
+                "value": "90"
+              }
+            ]
+          },
+          {
+            "row": 5,
+            "values": [
+              {
+                "col": 11,
+                "value": "Total E-DeliveryL WPL"
+              },
+              {
+                "col": 13,
+                "value": "=SUMIF(C20:C22,\"E\",N20:N22)"
+              },
+              {
+                "col": 22,
+                "value": "Сертификация"
+              },
+              {
+                "col": 23,
+                "value": "100"
+              }
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              {
+                "col": 11,
+                "value": "Total Harware WPL"
+              },
+              {
+                "col": 13,
+                "value": "=N17-M5-M4"
+              }
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              {
+                "col": 11,
+                "value": "Total Services Disti wDisc"
+              },
+              {
+                "col": 13,
+                "value": "=Q21"
+              }
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              {
+                "col": 11,
+                "value": "Total E-Delivery Disti wDisc"
+              },
+              {
+                "col": 13,
+                "value": "=SUMIF(C20:C22,\"E\",Q20:Q22)"
+              }
+            ]
+          },
+          {
+            "row": 10,
+            "values": [
+              {
+                "col": 11,
+                "value": "Total Harware Disti wDisc"
+              },
+              {
+                "col": 13,
+                "value": "=Q17-M9-M8"
+              }
+            ]
+          },
+          {
+            "row": 11,
+            "values": [
+              {
+                "col": 4,
+                "value": "Ценовое предложение действительно в течение 5 календарных дней, только на данную конфигурацию и указанное количество товара."
+              }
+            ]
+          },
+          {
+            "row": 12,
+            "values": [
+              {
+                "col": 4,
+                "value": "Цены включают НДС 12%."
+              },
+              {
+                "col": 10,
+                "value": "Project ID:"
+              },
+              {
+                "col": 11,
+                "value": "AQ165712316LV"
+              }
+            ]
+          },
+          {
+            "row": 13,
+            "values": [
+              {
+                "col": 10,
+                "value": "GT"
+              }
+            ]
+          },
+          {
+            "row": 14,
+            "values": [
+              {
+                "col": 4,
+                "value": "Условия поставки"
+              },
+              {
+                "col": 5,
+                "value": " DDP Tashkent"
+              }
+            ]
+          },
+          {
+            "row": 15,
+            "values": [
+              {
+                "col": 4,
+                "value": "Срок поставки, дней"
+              },
+              {
+                "col": 5,
+                "value": "90"
+              }
+            ]
+          },
+          {
+            "row": 17,
+            "values": [
+              {
+                "col": 4,
+                "value": "Vendor"
+              },
+              {
+                "col": 5,
+                "value": "Cisco"
+              },
+              {
+                "col": 10,
+                "value": "Total GPL:"
+              },
+              {
+                "col": 11,
+                "value": "=SUM(K20:K23)"
+              },
+              {
+                "col": 13,
+                "value": "Total:"
+              },
+              {
+                "col": 14,
+                "value": "=SUM(N20:N23)"
+              },
+              {
+                "col": 16,
+                "value": "Total:"
+              },
+              {
+                "col": 17,
+                "value": "=SUM(Q20:Q23)"
+              },
+              {
+                "col": 20,
+                "value": "Total:"
+              },
+              {
+                "col": 21,
+                "value": "=SUM(U20:U23)"
+              },
+              {
+                "col": 22,
+                "value": "Total:"
+              },
+              {
+                "col": 23,
+                "value": "=SUM(W3:W5)"
+              },
+              {
+                "col": 25,
+                "value": "Total:"
+              }
+            ]
+          },
+          {
+            "row": 19,
+            "values": [
+              {
+                "col": 1,
+                "value": "Equipment"
+              },
+              {
+                "col": 2,
+                "value": "Line"
+              },
+              {
+                "col": 3,
+                "value": "License"
+              },
+              {
+                "col": 4,
+                "value": "P/N"
+              },
+              {
+                "col": 5,
+                "value": "Description"
+              },
+              {
+                "col": 9,
+                "value": "Q-ty"
+              },
+              {
+                "col": 10,
+                "value": "GPL"
+              },
+              {
+                "col": 11,
+                "value": "Total GPL"
+              },
+              {
+                "col": 12,
+                "value": "WPL Disc. %"
+              },
+              {
+                "col": 13,
+                "value": "WPL"
+              },
+              {
+                "col": 14,
+                "value": "Total WPL"
+              },
+              {
+                "col": 15,
+                "value": "Disc. %"
+              },
+              {
+                "col": 16,
+                "value": "Dist.Price w.Disc"
+              },
+              {
+                "col": 17,
+                "value": "Total Dist Price w.Disc"
+              },
+              {
+                "col": 18,
+                "value": "Delivery per unit"
+              },
+              {
+                "col": 19,
+                "value": "Intercompany margin"
+              },
+              {
+                "col": 20,
+                "value": "Invoice Price CIP Tashkent"
+              },
+              {
+                "col": 21,
+                "value": "Total Invoice Price"
+              },
+              {
+                "col": 22,
+                "value": "пошлина"
+              },
+              {
+                "col": 23,
+                "value": "Тамож. проц за ед."
+              },
+              {
+                "col": 25,
+                "value": "НДС"
+              }
+            ]
+          },
+          {
+            "row": 20,
+            "values": [
+              {
+                "col": 1,
+                "value": "1.0"
+              },
+              {
+                "col": 2,
+                "value": "1.0"
+              },
+              {
+                "col": 3,
+                "value": "P"
+              },
+              {
+                "col": 4,
+                "value": "C1300-24P-4G"
+              },
+              {
+                "col": 5,
+                "value": "Catalyst 1300 24-port GE, PoE, 4x1G SFP"
+              },
+              {
+                "col": 9,
+                "value": "1"
+              },
+              {
+                "col": 10,
+                "value": "831.37"
+              },
+              {
+                "col": 11,
+                "value": "=J20*I20"
+              },
+              {
+                "col": 12,
+                "value": "42"
+              },
+              {
+                "col": 13,
+                "value": "=ROUND(J20*(100-L20)%,2)"
+              },
+              {
+                "col": 14,
+                "value": "=M20*I20"
+              },
+              {
+                "col": 16,
+                "value": "=ROUND(J20*(1-O20%),2)"
+              },
+              {
+                "col": 17,
+                "value": "=P20*I20"
+              },
+              {
+                "col": 18,
+                "value": "=($Q$2/$Q$17)*P20"
+              },
+              {
+                "col": 19,
+                "value": "0.02"
+              },
+              {
+                "col": 20,
+                "value": "=IF($M$2=\"REG\",M20,P20)*(1+S20)+R20"
+              },
+              {
+                "col": 21,
+                "value": "=T20*I20"
+              },
+              {
+                "col": 22,
+                "value": "0.1"
+              },
+              {
+                "col": 23,
+                "value": "=$W$17*T20/$U$17"
+              },
+              {
+                "col": 25,
+                "value": "0.12"
+              }
+            ]
+          },
+          {
+            "row": 21,
+            "values": [
+              {
+                "col": 1,
+                "value": "1.1"
+              },
+              {
+                "col": 2,
+                "value": "1.0.1"
+              },
+              {
+                "col": 3,
+                "value": "S"
+              },
+              {
+                "col": 4,
+                "value": "CON-SNT-C13002PG"
+              },
+              {
+                "col": 5,
+                "value": "SNTC-8X5XNBD Catalyst 1300 24-port GE, PoE, 4x1G SFP"
+              },
+              {
+                "col": 9,
+                "value": "1"
+              },
+              {
+                "col": 10,
+                "value": "119.6"
+              },
+              {
+                "col": 11,
+                "value": "=J21*I21"
+              },
+              {
+                "col": 12,
+                "value": "35"
+              },
+              {
+                "col": 13,
+                "value": "=ROUND(J21*(100-L21)%,2)"
+              },
+              {
+                "col": 14,
+                "value": "=M21*I21"
+              },
+              {
+                "col": 15,
+                "value": "35"
+              },
+              {
+                "col": 16,
+                "value": "=ROUND(J21*(1-O21%),2)"
+              },
+              {
+                "col": 17,
+                "value": "=P21*I21"
+              },
+              {
+                "col": 18,
+                "value": "=($Q$2/$Q$17)*P21"
+              },
+              {
+                "col": 19,
+                "value": "0.02"
+              },
+              {
+                "col": 20,
+                "value": "=IF($M$2=\"REG\",M21,P21)*(1+S21)+R21"
+              },
+              {
+                "col": 21,
+                "value": "=T21*I21"
+              },
+              {
+                "col": 23,
+                "value": "=$W$17*T21/$U$17"
+              },
+              {
+                "col": 25,
+                "value": "0.12"
+              }
+            ]
+          },
+          {
+            "row": 22,
+            "values": [
+              {
+                "col": 1,
+                "value": "1.2"
+              },
+              {
+                "col": 2,
+                "value": "1.1"
+              },
+              {
+                "col": 4,
+                "value": "CAB-ACE"
+              },
+              {
+                "col": 5,
+                "value": "AC Power Cord (Europe), C13, CEE 7, 1.5M"
+              },
+              {
+                "col": 9,
+                "value": "1"
+              },
+              {
+                "col": 10,
+                "value": "0"
+              },
+              {
+                "col": 11,
+                "value": "=J22*I22"
+              },
+              {
+                "col": 12,
+                "value": "42"
+              },
+              {
+                "col": 13,
+                "value": "=ROUND(J22*(100-L22)%,2)"
+              },
+              {
+                "col": 14,
+                "value": "=M22*I22"
+              },
+              {
+                "col": 16,
+                "value": "=ROUND(J22*(1-O22%),2)"
+              },
+              {
+                "col": 17,
+                "value": "=P22*I22"
+              },
+              {
+                "col": 18,
+                "value": "=($Q$2/$Q$17)*P22"
+              },
+              {
+                "col": 19,
+                "value": "0.02"
+              },
+              {
+                "col": 20,
+                "value": "=IF($M$2=\"REG\",M22,P22)*(1+S22)+R22"
+              },
+              {
+                "col": 21,
+                "value": "=T22*I22"
+              },
+              {
+                "col": 23,
+                "value": "=$W$17*T22/$U$17"
+              },
+              {
+                "col": 25,
+                "value": "0.12"
+              }
+            ]
+          },
+          {
+            "row": 23,
+            "values": [
+              {
+                "col": 5,
+                "value": " "
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "estimate": {
+    "sheets": [
+      "EstimateDetails_AQ165712316LV"
+    ],
+    "sheet_details": {
+      "EstimateDetails_AQ165712316LV": {
+        "max_row": 6,
+        "max_col": 15,
+        "non_empty_rows_sample": [
+          {
+            "row": 1,
+            "values": [
+              {
+                "col": 1,
+                "value": "Line Number"
+              },
+              {
+                "col": 2,
+                "value": "Item Name"
+              },
+              {
+                "col": 3,
+                "value": "Smart Account Mandatory"
+              },
+              {
+                "col": 4,
+                "value": "Description"
+              },
+              {
+                "col": 5,
+                "value": "Group Name"
+              },
+              {
+                "col": 6,
+                "value": "Service Duration (Months)"
+              },
+              {
+                "col": 7,
+                "value": "Estimated Lead Time (Days)"
+              },
+              {
+                "col": 8,
+                "value": "Included Item"
+              },
+              {
+                "col": 9,
+                "value": "Quantity"
+              },
+              {
+                "col": 10,
+                "value": "Pricing Term"
+              },
+              {
+                "col": 11,
+                "value": "ListPrice"
+              },
+              {
+                "col": 12,
+                "value": "Extended ListPrice"
+              },
+              {
+                "col": 13,
+                "value": "Discount %"
+              },
+              {
+                "col": 14,
+                "value": "Selling Price"
+              },
+              {
+                "col": 15,
+                "value": "Service Type"
+              }
+            ]
+          },
+          {
+            "row": 2,
+            "values": [
+              {
+                "col": 1,
+                "value": "1.0"
+              },
+              {
+                "col": 2,
+                "value": "C1300-24P-4G"
+              },
+              {
+                "col": 3,
+                "value": "-"
+              },
+              {
+                "col": 4,
+                "value": "Catalyst 1300 24-port GE, PoE, 4x1G SFP"
+              },
+              {
+                "col": 5,
+                "value": "Default"
+              },
+              {
+                "col": 6,
+                "value": "N/A"
+              },
+              {
+                "col": 7,
+                "value": "49"
+              },
+              {
+                "col": 8,
+                "value": "No"
+              },
+              {
+                "col": 9,
+                "value": "1"
+              },
+              {
+                "col": 11,
+                "value": "831.37"
+              },
+              {
+                "col": 12,
+                "value": "=(K2*I2)"
+              },
+              {
+                "col": 13,
+                "value": "0.0"
+              },
+              {
+                "col": 14,
+                "value": "=ROUND(ROUND(K2*(1-M2/100), 2)*I2, 2)"
+              }
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              {
+                "col": 1,
+                "value": "1.0.1"
+              },
+              {
+                "col": 2,
+                "value": "CON-SNT-C13002PG"
+              },
+              {
+                "col": 3,
+                "value": "-"
+              },
+              {
+                "col": 4,
+                "value": "SNTC-8X5XNBD Catalyst 1300 24-port GE, PoE, 4x1G SFP"
+              },
+              {
+                "col": 6,
+                "value": "12"
+              },
+              {
+                "col": 7,
+                "value": "N/A"
+              },
+              {
+                "col": 8,
+                "value": "No"
+              },
+              {
+                "col": 9,
+                "value": "1"
+              },
+              {
+                "col": 11,
+                "value": "119.6"
+              },
+              {
+                "col": 12,
+                "value": "=(K3*I3)"
+              },
+              {
+                "col": 13,
+                "value": "0.0"
+              },
+              {
+                "col": 14,
+                "value": "=ROUND(ROUND(K3*(1-M3/100), 2)*I3, 2)"
+              },
+              {
+                "col": 15,
+                "value": "PRIMARYSERVICE"
+              }
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              {
+                "col": 1,
+                "value": "1.1"
+              },
+              {
+                "col": 2,
+                "value": "CAB-ACE"
+              },
+              {
+                "col": 3,
+                "value": "-"
+              },
+              {
+                "col": 4,
+                "value": "AC Power Cord (Europe), C13, CEE 7, 1.5M"
+              },
+              {
+                "col": 6,
+                "value": "N/A"
+              },
+              {
+                "col": 7,
+                "value": "14"
+              },
+              {
+                "col": 8,
+                "value": "No"
+              },
+              {
+                "col": 9,
+                "value": "1"
+              },
+              {
+                "col": 11,
+                "value": "0.0"
+              },
+              {
+                "col": 12,
+                "value": "=(K4*I4)"
+              },
+              {
+                "col": 13,
+                "value": "0.0"
+              },
+              {
+                "col": 14,
+                "value": "=ROUND(ROUND(K4*(1-M4/100), 2)*I4, 2)"
+              }
+            ]
+          },
+          {
+            "row": 5,
+            "values": [
+              {
+                "col": 13,
+                "value": "SubTotal"
+              },
+              {
+                "col": 14,
+                "value": "=(N2+N3+N4)"
+              }
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              {
+                "col": 13,
+                "value": "Estimate Total"
+              },
+              {
+                "col": 14,
+                "value": "=(N5)"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

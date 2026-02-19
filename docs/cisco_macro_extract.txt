@@ -1,0 +1,137 @@
+GO_CISCO and mode selection:
+Sub GO_CISCO()
+    Dim thisB As Workbook
+    Set thisB = ActiveWorkbook
+    With Application.FileDialog(msoFileDialogFilePicker)
+           .InitialFileName = thisB.Path
+           .AllowMultiSelect = False
+           .ButtonName = "OK"
+           .Filters.Clear
+           .Filters.Add Description:="Файлы Microsoft Excel", _
+                Extensions:="*.xls; *.xlsx; *.xlsm"
+           If .Show = 0 Then
+                Exit Sub
+           End If
+           Set sB = Workbooks.Open(.SelectedItems(1))
+    End With
+    Select Case mSh.[B3]
+    Case "KZ"
+        Call Macros_Cisco_KZ
+    Case "UZ", "TM", "AZ", "TJ"
+    If mSh.CheckBoxes(2).Value < 0 Then
+        Call Macros_Cisco_UZnew
+        Else
+        Call Macros_Cisco_shUZddp
+        End If
+        
+    Case "GR", "AM"
+        Call Macros_Cisco_GR
+    ' Case "AM"
+  '   Call Macros_Cisco_AM
+        
+    End Select
+End Sub
+
+Create_File_Excel / SaveFile naming:
+'процедура создает файл и копирует в него лист Шаблон1 и Шаблон2
+Private Sub Create_File_Excel()
+Dim Sh As Worksheet
+Dim Shablon1 As Worksheet
+    SaveFile
+    Set Shablon1 = Macros.Worksheets("LenovoNEW")
+    Set Rezult = Workbooks.Add
+    Shablon1.Visible = True
+    Shablon1.Activate
+    Shablon1.Copy After:=Rezult.Sheets(Rezult.Sheets.count)
+    Set Rez1 = ActiveSheet
+    Rez1.Name = "Commercial Offer"
+    Shablon1.Visible = False
+    
+    For Each Sh In Rezult.Worksheets
+            If (Sh.Name <> "Commercial Offer") Then
+                    Sh.Delete
+            End If
+    Next
+    'Rezult.SaveAs FullName2
+    Rezult.SaveAs FileName:= _
+      Path & "\" & SpecName & ".xlsx", FileFormat:= _
+xlOpenXMLWorkbook, CreateBackup:=False
+End Sub
+
+
+Private Sub SaveFile()
+'Dim x As String
+'FullName2 = Macros.Path
+'ChDir FullName2 'Ваш путь
+'x = Application.GetSaveAsFilename("", "Файл Excel (*.xlsx), *.xlsx")
+'If x = "False" Then
+   'Действия если юзер нажал "Отмена"
+  ' FullName2 = FullName2 & "\" & "Rezult.xlsx"
+'Else
+ '  FullName2 = x
+'End If
+
+If mSh.Range("B" & 6) = "" Then
+      Partner = ""
+   Else
+      Partner = "_" & mSh.Range("B" & 6)
+      End If
+If mSh.Range("B" & 7) = "" Then
+      Customer = ""
+   Else
+      Customer = "_" & mSh.Range("B" & 7)
+   End If
+   
+If mSh.Range("B" & 9) <> "" Then
+   Comments = "_" & mSh.Range("B" & 9)
+   Else
+   Comments = ""
+   End If
+      
+ProjectID = Mid(Source.Range("G3"), 21)
+
+If ProjectID = "" Then
+   ProjectID = ""
+   Else
+   ProjectID = "_" & ProjectID
+   End If
+
+      Set fs = CreateObject("Scripting.FileSystemObject")
+Path = bSh.Range("B" & 4) & "\" & Format(DateValue(Now), "ddmmyyyy")
+   If fs.folderexists(Path) Then
+      Else
+   MkDir Path
+   End If
+      
+SpecName = Format(DateValue(Now), "ddmmyyyy") & Partner & Customer & "_" & mSh.Range("B" & 8) & ProjectID & Comments
+
+
+End Sub
+
+Procedure markers for DDP/CIP:
+536:    If mSh.CheckBoxes(2).Value < 0 Then
+539:        Call Macros_Cisco_shUZddp
+4107:Sub Macros_Cisco_shUZddp()
+4114:    shUZddp.Visible = -1
+4116:    shUZddp.Copy After:=sB.Sheets(sB.Sheets.count)
+4145:    shUZddp.Visible = 2
+4937:Sub Macros_Cisco_UZnew()
+4944:    shUZnew.Visible = -1
+4946:    shUZnew.Copy After:=sB.Sheets(sB.Sheets.count)
+4964:    shUZnew.Visible = 2
+7765:VBA MACRO shUZddp.cls 
+7766:in file: macros_test.xls - OLE stream: '_VBA_PROJECT_CUR/VBA/shUZddp'
+7795:VBA MACRO shUZnew.cls 
+7796:in file: macros_test.xls - OLE stream: '_VBA_PROJECT_CUR/VBA/shUZnew'
+15531:' 	ArgsCall (Call) Macros_Cisco_shUZddp 0x0000 
+38379:' 	FuncDefn (Sub Macros_Cisco_shUZddp())
+40859:' 	FuncDefn (Sub shUZddp())
+43812:' 	FuncDefn (Sub Macros_Cisco_UZnew())
+44443:' 	Set shUZnew 
+44445:' 	Ld shUZnew 
+44470:' 	Ld shUZnew 
+44488:' 	Ld shUZnew 
+44512:' 	Ld shUZnew 
+44534:' 	Ld shUZnew 
+57233:' _VBA_PROJECT_CUR/VBA/shUZddp - 1000 bytes
+57239:' _VBA_PROJECT_CUR/VBA/shUZnew - 1000 bytes
